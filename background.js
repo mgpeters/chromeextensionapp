@@ -4,8 +4,11 @@
 
 'use strict';
 
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({color: '#000000'}, function() {
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({color: '#000000'}, () => {
+    let allFeed = document.querySelectorAll('role');
+    console.log(allFeed);
+
     console.log('The color is green.');
   });
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {

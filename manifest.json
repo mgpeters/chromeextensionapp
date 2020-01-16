@@ -2,12 +2,12 @@
   "name" : "Chrome Extension",
   "version": "1.0",
   "description": "Build an extension",
-  "permissions": ["activeTab" ,"declarativeContent", "storage"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "https://www.facebook.com/", "https://m.facebook.com/", "<all_urls>"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "page_action": {
+  "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/get_started16.png",
