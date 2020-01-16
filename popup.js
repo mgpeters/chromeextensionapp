@@ -17,13 +17,29 @@ changeColor.onclick = (element) => {
     // console.log(allFeed);
     chrome.tabs.executeScript({
       code: `
-        const filterArray = {
+        const filterObj = {
           trump: true,
           msnbc: true,
           cnn: true,
           fox: true,
           republicans: true,
           democrats: true,
+          impeachment: true,
+          president: true,
+          pelosi: true,
+          politics: true,
+          government: true,
+          governor: true,
+          election: true,
+          rights: true,
+          citizen: true,
+          fascism: true,
+          alliance: true,
+          blame: true,
+          bribe: true,
+          ukraine: true,
+          illegal: true,
+          lobby: true,
         };
 
       let allFeed = document.querySelectorAll(".userContentWrapper");
