@@ -17,9 +17,13 @@ changeColor.onclick = (element) => {
     // console.log(allFeed);
     chrome.tabs.executeScript({
       code: `
-        const filterObj = {
-        the: true,
-        i: true,
+        const filterArray = {
+          trump: true,
+          msnbc: true,
+          cnn: true,
+          fox: true,
+          republicans: true,
+          democrats: true,
         };
 
       let allFeed = document.querySelectorAll(".userContentWrapper");
